@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEC42770-CB63-46AB-BCE3-AFC5635680CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KokorinYan</RootNamespace>
+    <AssemblyName>KokorinYan</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data.Designer.cs">
+      <DependentUpon>Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Disc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disc.Designer.cs">
+      <DependentUpon>Disc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Алгоритмы .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Алгоритмы .Designer.cs">
+      <DependentUpon>Алгоритмы .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Алгоритмы2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Алгоритмы2.Designer.cs">
+      <DependentUpon>Алгоритмы2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Числа.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Числа.Designer.cs">
+      <DependentUpon>Числа.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Элементы управления.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Элементы управления.Designer.cs">
+      <DependentUpon>Элементы управления.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Data.resx">
+      <DependentUpon>Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disc.resx">
+      <DependentUpon>Disc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Алгоритмы .resx">
+      <DependentUpon>Алгоритмы .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Алгоритмы2.resx">
+      <DependentUpon>Алгоритмы2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Числа.resx">
+      <DependentUpon>Числа.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Элементы управления.resx">
+      <DependentUpon>Элементы управления.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\250px-Flag_of_the_United_States_%28Pantone%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\банан.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ФЫВФВФЫВ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ad366f7e0f90162c9ca38711.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\РЕРАП.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1612298572_91-p-anime-peizazh-fon-fioletovii-138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1625840097_46-kartinkin-com-p-ded-moroz-anime-anime-krasivo-58.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
